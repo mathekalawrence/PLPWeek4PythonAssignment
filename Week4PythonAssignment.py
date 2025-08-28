@@ -24,3 +24,21 @@ def process_file_with_error_handling():
             #WRITE the modified content to a new file.
             with open(output_filename, 'w') as outfile:
                 outfile.write(modified_text)
+
+            print(f"The processed text was successfully written to: {output_filename}")
+            print("Well done. Process complete!")
+
+            #if successful, the loop has to be broken
+            break
+
+        except FileNotFoundError:
+            #Handling the error if the file is non-existent
+            print(f"Error got!: The document '{input_filename}' not found.")
+            print("Please check the filename and try again now or later..")
+
+        except IOError as e:
+            #Handling other I/O errors..like permisssion errors
+            print(f"Permission error (I/O) occurred: {e}")
+            print("The program will restart. You may kindly try again.")
+
+            

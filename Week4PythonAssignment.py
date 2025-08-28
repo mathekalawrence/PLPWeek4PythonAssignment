@@ -45,6 +45,10 @@ def process_file_with_error_handling():
             #Catching any other possible errors
             print(f"An unexpected error occurred: {e}")
             print("THe program may restart.. Please give it another try..")
-            
+
+#Calling the program to start the program...
+if __name__ == "__main__":
+    process_file_with_error_handling()
+
 
 #          

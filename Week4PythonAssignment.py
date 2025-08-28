@@ -20,3 +20,7 @@ def process_file_with_error_handling():
 
             #Process the text
             modified_text = original_text.upper()
+
+            #WRITE the modified content to a new file.
+            with open(output_filename, 'w') as outfile:
+                outfile.write(modified_text)

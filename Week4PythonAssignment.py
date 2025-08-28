@@ -17,4 +17,6 @@ def process_file_with_error_handling():
                 original_text = infile.read()
 
             print(f"Confirmed!..Successfully read the file: {input.filename}")
-            
+
+            #Process the text
+            modified_text = original_text.upper()

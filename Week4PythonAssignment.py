@@ -40,5 +40,11 @@ def process_file_with_error_handling():
             #Handling other I/O errors..like permisssion errors
             print(f"Permission error (I/O) occurred: {e}")
             print("The program will restart. You may kindly try again.")
-
+        
+        except Exception as e:
+            #Catching any other possible errors
+            print(f"An unexpected error occurred: {e}")
+            print("THe program may restart.. Please give it another try..")
             
+
+#          
